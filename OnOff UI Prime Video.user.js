@@ -2,7 +2,7 @@
 // ==UserScript==
 // @name         On Off UI Prime Video
 // @namespace    http://tampermonkey.net/
-// @version      2.1
+// @version      2.2
 // @description  ###
 // @author       UserRoot-Luca
 // @match        https://www.primevideo.com/*
@@ -39,6 +39,7 @@
                     E_Array[3] = document.evaluate("//*[@id=\"dv-web-player\"]/div/div[1]/div/div/div[2]/div/div/div/div/div[1]/div[4]", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
                     E_Array[4] = document.evaluate("//*[@id=\"dv-web-player\"]/div/div[1]/div/div/div[2]/div/div/div/div/div[1]/div[5]/div[1]/div[2]", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
                     E_Array[5] = document.evaluate("//*[@id=\"dv-web-player\"]/div/div[1]/div/div/div[2]/div/div/div/div/div[1]/div[5]/div[2]", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+                    E_Array[6] = document.evaluate("//*[@id=\"dv-web-player\"]/div/div[1]/div/div/div[2]/div/div/div/div/div[1]/div[5]/div[3]", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
                     E_Array[7] = document.evaluate("//*[@id=\"dv-web-player\"]/div/div[1]/div/div/div[2]/div/div/div/div/div[1]/div[6]", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
                     for (let i = 0; i < E_Array.length; i++) {
                         let MyElement = E_Array[i];

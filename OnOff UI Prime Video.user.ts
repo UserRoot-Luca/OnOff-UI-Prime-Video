@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         On Off UI Prime Video
 // @namespace    http://tampermonkey.net/
-// @version      2.1
+// @version      2.2
 // @description  ###
 // @author       UserRoot-Luca
 // @match        https://www.primevideo.com/*
@@ -76,6 +76,13 @@
                     ).singleNodeValue;
                     E_Array[5] = document.evaluate(
                         "//*[@id=\"dv-web-player\"]/div/div[1]/div/div/div[2]/div/div/div/div/div[1]/div[5]/div[2]",
+                        document,
+                        null,
+                        XPathResult.FIRST_ORDERED_NODE_TYPE,
+                        null,
+                    ).singleNodeValue;
+                    E_Array[6] = document.evaluate(
+                        "//*[@id=\"dv-web-player\"]/div/div[1]/div/div/div[2]/div/div/div/div/div[1]/div[5]/div[3]",
                         document,
                         null,
                         XPathResult.FIRST_ORDERED_NODE_TYPE,
